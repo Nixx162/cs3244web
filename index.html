@@ -7,10 +7,12 @@
 
   <title>CS3244 Group 9</title>
   <link rel="icon" type="image/x-icon" href="assets/img/favicon-32x32.png">
-  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png"/>
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -23,13 +25,6 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Green
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/green-free-one-page-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -63,7 +58,8 @@
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">Welcome</h2>
-              <p class="animate__animated animate__fadeInUp">This is the home website of our machine learning project for STePS</p>
+              <p class="animate__animated animate__fadeInUp">This is the home website of our machine learning project
+                for STePS</p>
               <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
             </div>
           </div>
@@ -74,7 +70,8 @@
           <div class="carousel-container">
             <div class="container">
               <h2 class="animate__animated animate__fadeInDown">Sentiment Analysis</h2>
-              <p class="animate__animated animate__fadeInUp">We employ state of the art NLP models to sense the tone of a text</p>
+              <p class="animate__animated animate__fadeInUp">We employ state of the art NLP models to sense the tone of
+                a text</p>
               <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">View Our Code</a>
             </div>
           </div>
@@ -100,7 +97,10 @@
 
         <div class="section-title">
           <h2>About THE PROJECT</h2>
-          <p>In this project, we will explore sentiment analysis, which can be beneficial for companies to understand the market and improve their products and for consumers to make informed decisions when purchasing goods. We will investigate and optimize various machine learning models, including the State-of-the-Art (SOTA) model, trained using 3.6 million Amazon reviews to perform sentiment analysis.</p>
+          <p>In this project, we will explore sentiment analysis, which can be beneficial for companies to understand
+            the market and improve their products and for consumers to make informed decisions when purchasing goods. We
+            will investigate and optimize various machine learning models, including the State-of-the-Art (SOTA) model,
+            trained using 3.6 million Amazon reviews to perform sentiment analysis.</p>
         </div>
 
         <div class="row">
@@ -113,11 +113,18 @@
               Understanding the general sentiment of the many reviews requires a fast and accurate model.
             </p>
             <p>
-              We aim to make a machine learning application that uses natural language processing (NLP) algorithms, i.e., sentiment analysis to analyze Amazon reviews and classify them as positive or negative based on their sentiment. This application will provide a classification summary of the overall sentiment for a product, allowing users to quickly gauge customer sentiment and make informed decisions. Our user demographics for this application are companies and researchers who need to analyze large volumes of reviews. Indeed, since the structure of reviews are largely similar across the internet, our trained model can also be fed texts coming from other sites as well.
+              We aim to make a machine learning application that uses natural language processing (NLP) algorithms,
+              i.e., sentiment analysis to analyze Amazon reviews and classify them as positive or negative based on
+              their sentiment. This application will provide a classification summary of the overall sentiment for a
+              product, allowing users to quickly gauge customer sentiment and make informed decisions. Our user
+              demographics for this application are companies and researchers who need to analyze large volumes of
+              reviews. Indeed, since the structure of reviews are largely similar across the internet, our trained model
+              can also be fed texts coming from other sites as well.
             </p>
-			<p>
-				 We have successfully acquired a <strong>94.4%</strong> test accuracy using a CNN-LSTM model, tested on 400,000 reviews.
-			</p>
+            <p>
+              We have successfully acquired a <strong>94.4%</strong> test accuracy using a CNN-LSTM model, tested on
+              400,000 reviews.
+            </p>
           </div>
         </div>
 
@@ -127,29 +134,33 @@
     <!-- ======= Why Us Section ======= -->
     <section id="pipeline" class="pipeline">
       <div class="container">
-		  
-		<div class="section-title">
+
+        <div class="section-title">
           <h2>The Pipeline</h2>
-		</div>
+        </div>
 
         <div class="row no-gutters">
 
           <div class="col-lg-4 col-md-6 content-item">
             <span>01</span>
             <h4>The Data</h4>
-            <p>3.6 millions datapoints on the training set, containing review texts and binary labels, classifying each datapoints to either positive or negative. 400,000 datapoints on the test set with the same format</p>
+            <p>3.6 millions datapoints on the training set, containing review texts and binary labels, classifying each
+              datapoints to either positive or negative. 400,000 datapoints on the test set with the same format</p>
           </div>
 
           <div class="col-lg-4 col-md-6 content-item">
             <span>02</span>
             <h4>Cleaning the Data</h4>
-            <p>Raw reviews are dirty. We can remove irrelevant parts to optimise accuracy and speed. This includes: URLs, stopwords, special characters, punctuations, etc.</p>
+            <p>Raw reviews are dirty. We can remove irrelevant parts to optimise accuracy and speed. This includes:
+              URLs, stopwords, special characters, punctuations, etc.</p>
           </div>
 
           <div class="col-lg-4 col-md-6 content-item">
             <span>03</span>
             <h4> Extracting Features</h4>
-            <p>The cleaned texts need to somehow be transformed into a set of numerical features such that the model can work with it. In this case, the features will be an array of weighted word counts for each word in a datapoint</p>
+            <p>The cleaned texts need to somehow be transformed into a set of numerical features such that the model can
+              work with it. In this case, the features will be an array of weighted word counts for each word in a
+              datapoint</p>
           </div>
 
           <div class="col-lg-4 col-md-6 content-item">
@@ -172,21 +183,22 @@
     <!-- ======= Cta Section ======= -->
     <section id="cta" class="cta">
       <div class="container">
-		  
-		<div class="row">
-			<h1>Links</h1>  
-		</div>
-		  
-		<div class="row">
-         	<div class="col cta-btn-container text-center">
-            	<a class="cta-btn align-middle" href="#">View our code</a>
-          	</div>
-			<div class="col cta-btn-container text-center">
-            	<a class="cta-btn align-middle" href="#">Download our report</a>
-          	</div>
-			<div class="col cta-btn-container text-center">
-            	<a class="cta-btn align-middle" href="https://www.kaggle.com/datasets/bittlingmayer/amazonreviews" target="_blank">View the dataset</a>
-          	</div>
+
+        <div class="row">
+          <h1>Links</h1>
+        </div>
+
+        <div class="row">
+          <div class="col cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#" target="_blank">View our code</a>
+          </div>
+          <div class="col cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#" target="_blank">Download our report</a>
+          </div>
+          <div class="col cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="https://www.kaggle.com/datasets/bittlingmayer/amazonreviews"
+              target="_blank">View the dataset</a>
+          </div>
         </div>
 
       </div>
@@ -201,103 +213,98 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch justify-content-center">
             <div class="member">
-              <img src="assets/img/smth" alt="">
               <h4>Name</h4>
               <span>Major?</span>
               <p>
                 Say something? Or not?
               </p>
               <div class="social">
-				<a href=""><i class="bi bi-globe"></i></a>
-                <a href=""><i class="bi bi-github"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
+                <a href="" target="_blank"><i class="bi bi-globe"></i></a>
+                <a href="" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch justify-content-center">
             <div class="member">
-              <img src="assets/img/smth" alt="">
               <h4>Name</h4>
               <span>Major?</span>
               <p>
                 Say something? Or not?
               </p>
               <div class="social">
-				<a href=""><i class="bi bi-globe"></i></a>
-                <a href=""><i class="bi bi-github"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
+                <a href="" target="_blank"><i class="bi bi-globe"></i></a>
+                <a href="" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch justify-content-center">
             <div class="member">
-              <img src="assets/img/smth" alt="">
               <h4>Name</h4>
               <span>Major?</span>
               <p>
                 Say something? Or not?
               </p>
               <div class="social">
-				<a href=""><i class="bi bi-globe"></i></a>
-                <a href=""><i class="bi bi-github"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
+                <a href="" target="_blank"><i class="bi bi-globe"></i></a>
+                <a href="" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
-		  </div>		
-		  </div>
-		  <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch justify-content-center">
             <div class="member">
-              <img src="assets/img/smth" alt="">
               <h4>Name</h4>
               <span>Major?</span>
               <p>
                 Say something? Or not?
               </p>
               <div class="social">
-				<a href=""><i class="bi bi-globe"></i></a>
-                <a href=""><i class="bi bi-github"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
+                <a href="" target="_blank"><i class="bi bi-globe"></i></a>
+                <a href="" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch justify-content-center">
             <div class="member">
-              <img src="assets/img/smth" alt="">
               <h4>Name</h4>
               <span>Major?</span>
               <p>
                 Say something? Or not?
               </p>
               <div class="social">
-				<a href=""><i class="bi bi-globe"></i></a>
-                <a href=""><i class="bi bi-github"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
+                <a href="" target="_blank"><i class="bi bi-globe"></i></a>
+                <a href="" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch justify-content-center">
             <div class="member">
-              <img src="assets/img/smth" alt="">
               <h4>Name</h4>
               <span>Major?</span>
               <p>
                 Say something? Or not?
               </p>
               <div class="social">
-				<a href=""><i class="bi bi-globe"></i></a>
-                <a href=""><i class="bi bi-github"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
+                <a href="" target="_blank"><i class="bi bi-globe"></i></a>
+                <a href="" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
-		  </div>		
-		  </div>
+          </div>
+        </div>
       </div>
     </section><!-- End Team Section -->
   </main><!-- End #main -->
@@ -311,7 +318,8 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
